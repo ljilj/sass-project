@@ -1,23 +1,32 @@
 .u-color--grey-light {
-    color: $color-grey-light;
+    color: var(--color-grey-light);
 }
 
 .u-color--white {
-    color: $color-white;
+    color: var(--color-white);
 }
 
 .u-color--orange-red {
-    background-color: $color-orange-red;
+    background-color: var(--color-orange-red);
 }
 
 .u-color--red-light {
-    background-color: $color-red-light;
+    background-color: var(--color-red-light);
 }
 
 .u-color--yellow {
-    background-color: $color-yellow;
+    background-color: var(--color-yellow);
 }
 
 .u-color--green {
-    background-color: $color-green;
+    background-color: var(--color-green);
+}
+
+.u-text--uppercase {
+    text-transform: uppercase;
+}
+
+.u-line-yellow {
+    color: var(--color-yellow);
+    font-weight: 100;
 }
