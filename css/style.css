@@ -25,20 +25,22 @@ img {
 
 /***  Hero section  ***/
 .c-hero-section {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../images/hero-img.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.c-hero-container {
-  position: relative;
-  top: 33%;
+.c-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-hero-content {
-  max-width: 90vw;
-  margin: 0 auto;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
   text-align: center;
 }
 .c-hero-content > h3 {
@@ -50,7 +52,7 @@ img {
   margin: 0 auto;
   border: none;
 }
-@media (min-width: 375px) {
+@media (min-width: 380px) {
   .c-hero-content > hr {
     margin-block-end: 1.25rem;
   }
@@ -60,7 +62,7 @@ img {
     margin-block-end: 0.625rem;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1025px) {
   .c-hero-content > hr {
     margin-block-end: 0;
   }
@@ -69,24 +71,24 @@ img {
 .c-content__title > div:first-child {
   margin-block-end: 0.625rem;
 }
-@media (min-width: 558px) {
+@media (min-width: 440px) {
   .c-content__title > div:first-child {
-    margin-block-end: 0;
+    margin-block-end: -0.3rem;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .c-content__title > div:first-child {
     margin-block-end: -0.625rem;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1025px) {
   .c-content__title > div:first-child {
     margin-block-end: -1.25rem;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .c-content__title > div:first-child {
-    margin-block-end: -2.5rem;
+    margin-block-end: -2rem;
   }
 }
 
@@ -100,8 +102,9 @@ img {
 }
 
 .c-hero-footer {
-  position: relative;
-  top: 40%;
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
   max-width: 85vw;
   min-height: auto;
   margin: 0 auto;
@@ -125,22 +128,22 @@ h1 {
   font-weight: bold;
   font-style: normal;
 }
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 1.9rem;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 2rem;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1280px) {
   h1 {
     font-size: 3rem;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   h1 {
     font-size: 3.75rem;
   }
@@ -151,7 +154,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
-@media (min-width: 991px) {
+@media (min-width: 1024px) {
   h3 {
     font-size: 1.3rem;
   }
