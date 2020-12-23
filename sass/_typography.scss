@@ -28,6 +28,29 @@ h1 {
     }
 }
 
+h2 {
+    font-size: 1.3rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    @media (min-width: $mobile-sm) {
+        font-size: 1.9rem;
+    }
+
+    @media (min-width: $mobile) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: $desktop-md) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: $desktop-xl) {
+        font-size: 3.125rem;
+    }
+}
+
 h3 {
     font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
@@ -38,8 +61,29 @@ h3 {
     }
 }
 
+h4 {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
 p {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+button {
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }

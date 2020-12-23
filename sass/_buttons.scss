@@ -1,0 +1,26 @@
+.c-btn-content {
+    text-align: center;
+    margin-block-start: 1.5rem;
+    margin-block-end: 2.9375rem;
+    z-index: 72;
+
+    > button {
+        width: 11.0625rem;
+        height: 2.5rem;
+        border: none;
+        margin-block-end: 1rem;
+        color: var(--color-white);
+        &:last-child {
+            margin-block-end: 0;
+        }
+
+        @media (min-width: 560px) {
+            margin-inline-start: 2.5rem;
+            margin-inline-end: 2.5rem;
+        }
+
+        @media (min-width: 810px) {
+            margin-block-end: 0;
+        } 
+    }
+}

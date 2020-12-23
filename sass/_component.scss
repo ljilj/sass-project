@@ -92,3 +92,74 @@
 }
 
 
+/***  Affixes section  ***/
+.c-affixes-section {
+    padding-block-start: 5.75rem;
+    padding-block-end: 4.0625rem;
+    min-height: 60em;
+    background: url('../images/affixes-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 70;
+    background-image: -moz-linear-gradient(180deg, rgba(33, 32, 34, 0.5) 0%, rgba(34, 33, 35, 0.492188) 0.02%, rgba(101, 101, 101, 0) 238.27%);
+    background-image: -webkit-linear-gradient(180deg, rgba(33, 32, 34, 0.5) 0%, rgba(34, 33, 35, 0.492188) 0.02%, rgba(101, 101, 101, 0) 238.27%);
+    background-image: -ms-linear-gradient(180deg, rgba(33, 32, 34, 0.5) 0%, rgba(34, 33, 35, 0.492188) 0.02%, rgba(101, 101, 101, 0) 238.27%);
+}
+
+.c-center-x-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+}
+
+.c-affixes-content {
+    z-index: 71;
+
+    > p {
+        text-align: center;
+        margin-block-end: 1.5rem;
+    }
+}
+
+.c-affixes-desc {
+    z-index: 73;
+    margin-block-start: 1.375rem;
+    > .c-content__title {
+        margin-block-end: 1.1875rem;
+    }
+
+    > hr {
+        height: 2px;
+        width: 84px;
+        margin: 0 auto;
+        border: none;
+        color: var(--color-orange-red);
+    } 
+
+    > .c-content__desc {
+        max-width: 57rem;
+        margin-block-start: 1.625rem;
+        margin-block-end: 2rem;
+    }
+}
+
+.c-affixes-content {
+    margin-block-start: 0.625rem;
+    > p {
+        font-style: italic;
+        font-size: 1.125rem;
+    }
+}
+
