@@ -1,0 +1,19 @@
+.c-btn {
+    padding: 0.625rem 1.875rem;
+    text-align: center;
+    font-size: 1.125rem;
+    border: none;
+    color: var(--color-white);
+}
+
+.c-btn--success {
+    background-color: var(--color-success);
+}
+
+.c-btn--warning {
+    background-color: var(--color-warning);
+}
+
+.c-btn--alert {
+    background-color: var(--color-alert);
+}
