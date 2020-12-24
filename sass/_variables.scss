@@ -1,10 +1,10 @@
 :root {
     --color-white: #ffffff;
     --color-grey-light: #BCBCBC;
-    --color-yellow: #FFB86C;
-    --color-green: #50FA7B;
-    --color-red-light: #E74315;
-    --color-orange-red: #BA3A16;
+    --color-warning: #FFB86C;
+    --color-success: #50FA7B;
+    --color-alert: #E74315;
+    --color-orange: #BA3A16;
 }
 
 $mobile-xss: 380px;
