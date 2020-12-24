@@ -14,53 +14,50 @@
         grid-template-columns: 1fr 1fr;
     }
 }
-     
-.l-card-col {
-    border: 2px solid var(--color-alert);
-    background-color:  rgba(23, 11, 11, 0.5);
-    
-    &:hover {
-        border: none;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.4);
-    }
 
+.l-card-col-base,
+.l-card-col-modifier {    
     > h4 {
-        background-color: var(--color-alert);
         width: 9.3125rem;
         margin: 0 auto;
         border-radius: 0px 0px 10px 10px;
     }
-
+    
     > h3 {
         margin-block-start: 1.9375rem;
         margin-block-end: 1.1875rem;
-        color: var(--color-alert);
-
+    
         @media (min-width: $mobile-sm) {
             font-size: 1.875rem;
         }
     }
-
+    
     > p {
         margin-inline-start: 1rem;
         margin-inline-end: 1rem;
         margin-block-end: 1.1875rem;
     }
-
-    > hr {
-        height: 2px;
-        width: 84px;
-        margin: 0 auto;
-        border: none;
-        color: var(--color-orange);
-        margin-block-end: 1.1875rem;
-    }
-
+    
     > h5 {
         margin-inline-start: 1rem;
         margin-inline-end: 1rem;
         margin-block-end: 1.9375rem;
     }
 }
+
+.l-card-col-base {
+    &:hover {
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.4);
+    }
+}   
+
+.l-card-col-modifier {
+    background-color:  rgba(23, 11, 11, 0.5);
+}
+
+
+
+
 
