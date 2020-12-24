@@ -1,0 +1,48 @@
+.c-table {
+    @media (min-width: 200px) {
+        overflow: scroll;
+    }
+
+    @media (min-width: $mobile-sm) {
+        overflow: hidden;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-block-start: 2rem;
+
+    @media (min-width: $mobile-xss) {
+        margin-inline-start: 0;
+        margin-inline-end: -1rem;
+    }
+}
+
+th, td {
+    text-align: center;
+    padding: 0.625rem;
+}
+
+th {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;  
+    color: var(--color-grey-dark); 
+    background-color: var(--color-success);
+}
+
+tr {
+    color: var(--color-white);
+
+    &:nth-child(odd) {
+        background: rgba(156, 156, 156, 0.2);
+    }
+}
+
+tr {
+    &:hover {
+        background: #848484;
+    }
+}
