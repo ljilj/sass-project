@@ -6,6 +6,10 @@
     color: var(--color-white);
 }
 
+.u-color--primary {
+    color: var(--color-primary);
+}
+
 .u-text--alert {
     color: var(--color-alert);
 }
@@ -35,12 +39,23 @@
     text-align: center;
 }
 
+.text-left {
+    text-align: start;
+}
+
 .u-mt {
     margin-block-start: 4.5rem;
 }
 
 .u-mb {
     margin-block-end: 1.5rem;
+}
+
+.u-my {
+    @media (min-width: $desktop) {
+        margin-inline-start: 10rem;
+        margin-inline-end: 10rem;
+    }
 }
 
 .u-btn-sm {
@@ -61,6 +76,23 @@
     width: 84px;
     border: none;
     margin-block-end: 1.1875rem;
+}
+
+.u-line-left {
+    margin-inline-start: 0;
+    height: 2px;
+    width: 84px;
+    border: none;
+    margin-block-start: 1.3125rem;
+    margin-block-end: 1.3125rem;
+}
+
+.u-line-my {
+    height: 2px;
+    width: 84px;
+    border: none;
+    margin-block-start: 1rem;
+    margin-block-end: 3.5rem;
 }
 
 .u-color--alert {
@@ -104,8 +136,41 @@
     }
 }
 
+ul {
+    list-style: none;
+    width: 40%;
+    margin: 0 auto;
 
+    @media (min-width: 200px) {
+        width: 80%;
+    }
 
+    @media (min-width: 600px) {
+        width: 65%;
+    }
+
+    @media (min-width:  $mobile-sm) {
+        width: 55%;
+    }
+
+    @media (min-width: 991px) {
+        width: 50%;
+    }
+
+    @media (min-width: $desktop) {
+        width: 40%;
+        padding-inline-start: 2rem;
+    }
+}
+
+li::before {
+    content: '\220E';
+    color: var(--color-success);
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-inline-end: 1rem;
+}
 
 
 

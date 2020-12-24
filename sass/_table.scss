@@ -1,6 +1,10 @@
 .c-table {
     @media (min-width: 200px) {
-        overflow-Y: scroll;
+        overflow: scroll;
+    }
+
+    @media (min-width: $mobile-sm) {
+        overflow: hidden;
     }
 }
 

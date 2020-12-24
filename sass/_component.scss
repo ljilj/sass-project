@@ -99,7 +99,16 @@
     background: -ms-linear-gradient(-90deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
 }
 
-
+/*** Group Considerations section  ***/
+.c-considerations-section {
+    padding-block-start: 0.75rem;
+    padding-block-end: 0;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    background: url('../images/considerations-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 
 
