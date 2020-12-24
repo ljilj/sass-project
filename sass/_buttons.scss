@@ -1,26 +1,19 @@
-.c-btn-content {
+.c-btn {
+    padding: 0.625rem 1.875rem;
     text-align: center;
-    margin-block-start: 1.5rem;
-    margin-block-end: 2.9375rem;
-    z-index: 72;
+    font-size: 1.125rem;
+    border: none;
+    color: var(--color-white);
+}
 
-    > button {
-        width: 11.0625rem;
-        height: 2.5rem;
-        border: none;
-        margin-block-end: 1rem;
-        color: var(--color-white);
-        &:last-child {
-            margin-block-end: 0;
-        }
+.c-btn--success {
+    background-color: var(--color-success);
+}
 
-        @media (min-width: 560px) {
-            margin-inline-start: 2.5rem;
-            margin-inline-end: 2.5rem;
-        }
+.c-btn--warning {
+    background-color: var(--color-warning);
+}
 
-        @media (min-width: 810px) {
-            margin-block-end: 0;
-        } 
-    }
+.c-btn--alert {
+    background-color: var(--color-alert);
 }
