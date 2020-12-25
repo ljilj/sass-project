@@ -1,12 +1,15 @@
 :root {
     --color-white: #ffffff;
+    --color-black: #000000;
     --color-grey-light: #BCBCBC;
     --color-grey-dark: #383838; 
+    --color-grey: #393939;
     --color-primary: #00FFF0;
     --color-warning: #FFB86C;
     --color-success: #50FA7B;
     --color-alert: #E74315;
     --color-orange: #BA3A16;
+    --color-black-red: rgba(23, 11, 11, 0.5);
 }
 
 $mobile-xss: 380px;
