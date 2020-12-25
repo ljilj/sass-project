@@ -89,7 +89,7 @@
 
 
 /*** Second Affixes section  ***/
-.c-second-affixes-section {
+.c-affixes2-section {
     padding-block-start: 0.75rem;
     padding-block-end: 4.0625rem;
     padding-inline-start: 2rem;
@@ -109,6 +109,35 @@
     background-size: cover;
     background-position: center;
 }
+
+/*** Footer section  ***/
+.c-footer-section {
+    padding-block-start: 3.9375rem;
+    background-color: var(--color-black);
+}
+
+.c-footer__title {
+    margin-block-end: 2.5625rem;
+    font-weight: 700;
+}
+
+.c-footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $mobile) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .c-footer__link {
+        text-decoration: none;
+        margin-block-end: 2.5625rem;
+    }
+}
+
 
 
 

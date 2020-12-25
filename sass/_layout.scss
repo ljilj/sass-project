@@ -15,8 +15,13 @@
     }
 }
 
-.l-card-col-base,
-.l-card-col-modifier {    
+.l-card-col {    
+    &:hover {
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.4);
+    }
+
     > h4 {
         width: 9.3125rem;
         margin: 0 auto;
@@ -44,18 +49,9 @@
         margin-block-end: 1.9375rem;
     }
 }
+ 
 
-.l-card-col-base {
-    &:hover {
-        border: none;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.4);
-    }
-}   
 
-.l-card-col-modifier {
-    background-color:  rgba(23, 11, 11, 0.5);
-}
 
 
 
