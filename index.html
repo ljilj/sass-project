@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wow-project</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>   
+    <!-- Header section -->
+    <header class="c-header-section">
+        <nav class="nav">
+                <div class="nav__content">
+                    <!-- nav header -->
+                    <div class="header__content">
+                        <a class="nav__logo">WOW</a>
+                        <button class="nav-toggle">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <!-- links -->
+                    <div class="nav__container">
+                        <div class="links__container">
+                            <a href="#home">Home</a>
+                            <a href="#affixes">Affixes</a>
+                            <a href="#considerations">Considerations</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>   
+    </header>
+    <!-- End Header section -->
+
     <!-- Hero section -->
-    <section class="c-hero-section">
+    <section class="c-hero-section" id="home">
         <div class="u-container">
             <h3 class="c-content__desc u-color--grey-light text-center">What garbage affixes do i have to deal with this week?</h3>
             <hr class="u-line u-color--alert">
@@ -34,7 +59,7 @@
     <!-- End Hero section -->
 
     <!-- Affixes section -->
-    <section class="c-affixes-section">
+    <section class="c-affixes-section" id="affixes">
         <div class="u-container text-center">
             <h2 class="c-content__title u-color--white u-text--uppercase">Affixes</h2>
             <div class="c-color__content"></div>
@@ -178,7 +203,7 @@
     <!-- End Affixes2 section -->
 
      <!-- Group Considerations section-->
-    <section class="c-considerations-section">
+    <section class="c-considerations-section" id="considerations">
         <div class="u-container text-center">
             <h2 class="c-content__title u-color--white u-text--uppercase text-center">Group Considerations</h2>
             <div class="c-color__content"></div>
@@ -245,5 +270,7 @@
         </h6>
     </footer>
     <!-- End Footer section -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
