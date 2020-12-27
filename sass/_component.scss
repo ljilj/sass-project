@@ -1,8 +1,3 @@
-/*** Header section  ***/
-.c-header-section {
-    min-height: 0;
-}
-
 /***  Hero section  ***/
 .c-hero-section {
     min-height: 100vh;
@@ -115,33 +110,6 @@
     background-position: center;
 }
 
-/*** Footer section  ***/
-.c-footer-section {
-    padding-block-start: 3.9375rem;
-    background-color: var(--color-black);
-}
-
-.c-footer__title {
-    margin-block-end: 2.5625rem;
-    font-weight: 700;
-}
-
-.c-footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: $mobile) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .c-footer__link {
-        text-decoration: none;
-        margin-block-end: 2.5625rem;
-    }
-}
 
 
 
