@@ -7,14 +7,11 @@ navToggle.addEventListener('click', function() {
 });
 
 
-// Page-loader
-$(document).ready(function() {
-	
-	setTimeout(function(){
-		$('body').addClass('loaded');
-		$('h1').css('color','#000000');
-	}, 1000);
-	
+// Page-loader 
+window.addEventListener('load',function(){
+	document.querySelector('body').classList.add("loaded"); 
 });
+
+
 
 
