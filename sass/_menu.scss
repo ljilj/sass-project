@@ -1,71 +1,83 @@
 .nav {
-    background-color: var(--color-black);
-    padding: 1rem 1.5rem;
-}
-.nav__content {
-    max-width: 75rem;
-    margin: 0 auto;
-
-    @media (min-width: 991px) {
-        width: 90vw;
-        max-width: 1170px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-.header__content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.nav-toggle {
-    font-size: 1.5rem;
-    color: var(--color-white);
-    background: transparent;
-    border-color: transparent;
-    cursor: pointer;
 
     @media (min-width: 991px) {
-        display: none;
-    }
-}
-.nav__logo {
-    height: 1.25rem;
-    color: var(--color-white);
-}
-
-.nav__container {
-    height: 0;
-    overflow: hidden;
-    margin: 0 -1.5rem;
-
-    @media (min-width: 991px) {
-        height: auto !important;
-    }
-}
-    
-.links__container {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: 991px) {
-        flex-direction: row;
+        max-width: 75rem;
+        margin: 0 auto;
     }
 
-    a {
+    > .nav__logo {
+        font-size: 1.5rem;
+        padding-block-start: 0.7rem;
+
+        &--white {
+            color: var(--color-white);
+        }
+    }
+
+    > .nav__toggle {
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        background-color: transparent;
         color: var(--color-white);
-        font-size: 1.1rem;
-        text-transform: capitalize;
-        letter-spacing:  0.25rem;
-        display: block;
-        font-weight: bold;
-        padding: 0.75rem 1.5rem;
+
+        @media (min-width: 991px) {
+            display: none;
+        }
+    }
+}
+.links__container {
+    display: none;
+    background-color: var(--color-black);
+
+    @media (min-width: 991px) {
+        display: flex;
+    }
+
+    > a {
+        color: var(--color-white);
+        margin: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+
+
+        @media (min-width: 991px) {
+            padding-inline-start: 1rem;
+            padding-inline-end: 1rem;
+            font-size: 1rem;
+        }
+
         &:hover {
             color: var(--color-alert);
         }
     }
 }
+
+.active-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+    > a {
+        padding-block-start: 1rem;
+        padding-block-end: 1rem;
+        font-size: 2rem;
+
+        &:first-child {
+            margin-block-start: 30vh;
+        }
+    }
+}
+
+
+
 
 

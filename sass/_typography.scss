@@ -29,25 +29,17 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-family: 'Cairo', sans-serif;
     font-weight: 700;
     font-style: normal;
 
-    @media (min-width: $mobile-sm) {
-        font-size: 1.9rem;
-    }
-
-    @media (min-width: $mobile) {
-        font-size: 2rem;
-    }
-
-    @media (min-width: $desktop-md) {
-        font-size: 3rem;
+    @media (min-width: $desktop) {
+        font-size: 2.5rem;
     }
 
     @media (min-width: $desktop-xl) {
-        font-size: 3.125rem;
+        font-size: 3.3rem;
     }
 }
 
