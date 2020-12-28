@@ -14,8 +14,16 @@
     color: var(--color-alert);
 }
 
+.u-text--warninig {
+    color: var(--color-warning);
+}
+
 .u-bkg--alert {
     background-color: var(--color-alert);
+}
+
+.u-bkg--success {
+    background-color: var(--color-success);
 }
 
 .u-b--alert {
@@ -62,6 +70,10 @@
 .u-mt {
     margin-block-start: 4.5rem;
 }
+
+.u-pt {
+    padding-block-start: 4.5rem;
+} 
 
 .u-mb {
     margin-block-end: 1.5rem;
